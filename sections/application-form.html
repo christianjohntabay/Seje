@@ -1,20 +1,111 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Application Form</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+body{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px 20px;
+}
+
+.page-container{
+width:100%;
+max-width:900px;
+}
+
+.page-card{
+padding:60px;
+border-radius:35px;
+}
+
+.page-title{
+font-size:52px;
+font-weight:800;
+margin-bottom:20px;
+line-height:1.1;
+}
+
+.page-text{
+font-size:18px;
+line-height:1.9;
+color:var(--text-secondary);
+margin-bottom:35px;
+}
+
+.back-btn{
+display:inline-block;
+}
+
+@media(max-width:900px){
+
+body{
+padding:20px;
+align-items:flex-start;
+}
+
+.page-card{
+padding:30px 25px;
+border-radius:28px;
+}
+
+.page-title{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.page-text{
+font-size:15px;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.back-btn{
+width:100%;
+text-align:center;
+padding:15px;
+font-size:15px;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-<section>
-<div class="glass about-box">
-<h1 style="font-size:50px;margin-bottom:20px;">Application Form</h1>
-<p>Add your content/documents here later.</p>
-<a href="../index.html" class="primary-btn" style="display:inline-block;margin-top:30px;">Back Home</a>
+
+<div class="page-container">
+
+<div class="glass page-card">
+
+<h1 class="page-title">
+Application Form
+</h1>
+
+<p class="page-text">
+Add your content/documents here later.
+</p>
+
+<a href="../index.html" class="primary-btn back-btn">
+Back Home
+</a>
+
 </div>
-</section>
+
+</div>
+
 </body>
+
 </html>
