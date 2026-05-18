@@ -22,7 +22,7 @@ padding:40px 20px;
 
 .page-container{
 width:100%;
-max-width:900px;
+max-width:1100px;
 }
 
 .page-card{
@@ -33,15 +33,24 @@ border-radius:35px;
 .page-title{
 font-size:52px;
 font-weight:800;
-margin-bottom:20px;
+margin-bottom:35px;
 line-height:1.1;
+text-transform:uppercase;
 }
 
-.page-text{
-font-size:18px;
-line-height:1.9;
-color:var(--text-secondary);
+.form-image{
+width:100%;
+border-radius:25px;
+overflow:hidden;
+border:2px solid rgba(255,255,255,0.08);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
 margin-bottom:35px;
+}
+
+.form-image img{
+width:100%;
+display:block;
+object-fit:cover;
 }
 
 .back-btn{
@@ -56,18 +65,12 @@ align-items:flex-start;
 }
 
 .page-card{
-padding:30px 25px;
+padding:30px 20px;
 border-radius:28px;
 }
 
 .page-title{
 font-size:34px;
-margin-bottom:15px;
-}
-
-.page-text{
-font-size:15px;
-line-height:1.8;
 margin-bottom:25px;
 }
 
@@ -91,12 +94,12 @@ font-size:15px;
 <div class="glass page-card">
 
 <h1 class="page-title">
-Application Form
+APPLICATION FORM
 </h1>
 
-<p class="page-text">
-Add your content/documents here later.
-</p>
+<div class="form-image">
+<img src="../images/application-form.png" alt="Application Form">
+</div>
 
 <a href="../index.html" class="primary-btn back-btn">
 Back Home
