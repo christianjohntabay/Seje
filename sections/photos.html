@@ -22,7 +22,7 @@ padding:40px 20px;
 
 .page-container{
 width:100%;
-max-width:900px;
+max-width:1400px;
 }
 
 .page-card{
@@ -33,15 +33,48 @@ border-radius:35px;
 .page-title{
 font-size:52px;
 font-weight:800;
-margin-bottom:20px;
+margin-bottom:35px;
 line-height:1.1;
 }
 
-.page-text{
-font-size:18px;
-line-height:1.9;
-color:var(--text-secondary);
+/* PHOTO GRID */
+.photo-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+margin-bottom:25px;
+}
+
+/* LAST PHOTO CENTER */
+.bottom-photo{
+display:flex;
+justify-content:center;
 margin-bottom:35px;
+}
+
+.photo-image{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.photo-image img{
+width:85%;
+max-width:380px;
+height:auto;
+object-fit:cover;
+border-radius:25px;
+border:2px solid rgba(255,255,255,0.08);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+background:rgba(255,255,255,0.03);
+padding:10px;
+display:block;
+}
+
+/* LAST PHOTO SLIGHTLY BIGGER */
+.bottom-photo img{
+max-width:420px;
 }
 
 .back-btn{
@@ -62,13 +95,20 @@ border-radius:28px;
 
 .page-title{
 font-size:34px;
-margin-bottom:15px;
+margin-bottom:25px;
 }
 
-.page-text{
-font-size:15px;
-line-height:1.8;
-margin-bottom:25px;
+/* STACK PHOTOS ON MOBILE */
+.photo-grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.photo-image img{
+width:100%;
+max-width:100%;
+padding:8px;
+border-radius:20px;
 }
 
 .back-btn{
@@ -94,9 +134,35 @@ font-size:15px;
 Photos
 </h1>
 
-<p class="page-text">
-Add your content/documents here later.
-</p>
+<!-- TOP 4 PHOTOS -->
+<div class="photo-grid">
+
+<div class="photo-image">
+<img src="../images/photo1.jpg" alt="Photo 1">
+</div>
+
+<div class="photo-image">
+<img src="../images/photo2.jpg" alt="Photo 2">
+</div>
+
+<div class="photo-image">
+<img src="../images/photo3.jpg" alt="Photo 3">
+</div>
+
+<div class="photo-image">
+<img src="../images/photo4.jpg" alt="Photo 4">
+</div>
+
+</div>
+
+<!-- BOTTOM CENTER PHOTO -->
+<div class="bottom-photo">
+
+<div class="photo-image">
+<img src="../images/photo5.jpg" alt="Photo 5">
+</div>
+
+</div>
 
 <a href="../index.html" class="primary-btn back-btn">
 Back Home
