@@ -22,7 +22,7 @@ padding:40px 20px;
 
 .page-container{
 width:100%;
-max-width:1000px;
+max-width:1200px;
 }
 
 .page-card{
@@ -37,17 +37,31 @@ margin-bottom:35px;
 line-height:1.1;
 }
 
-/* IMAGE STYLE */
+/* TOP 2 IMAGES */
+.image-row{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+margin-bottom:25px;
+}
+
+/* SINGLE BOTTOM IMAGE */
+.bottom-image{
+display:flex;
+justify-content:center;
+margin-bottom:35px;
+}
+
 .medical-image{
 width:100%;
 display:flex;
 align-items:center;
 justify-content:center;
-margin-bottom:35px;
 }
 
 .medical-image img{
-width:60%;
+width:100%;
+max-width:500px;
 height:auto;
 object-fit:contain;
 border-radius:25px;
@@ -56,6 +70,10 @@ box-shadow:0 15px 35px rgba(0,0,0,0.25);
 background:rgba(255,255,255,0.03);
 padding:15px;
 display:block;
+}
+
+.bottom-image img{
+max-width:550px;
 }
 
 .back-btn{
@@ -79,8 +97,14 @@ font-size:34px;
 margin-bottom:25px;
 }
 
+/* STACK ALL IMAGES ON MOBILE */
+.image-row{
+grid-template-columns:1fr;
+gap:20px;
+}
+
 .medical-image img{
-width:100%;
+max-width:100%;
 padding:10px;
 border-radius:20px;
 }
@@ -108,16 +132,26 @@ font-size:15px;
 Medical Certification
 </h1>
 
+<!-- TOP 2 SIDE BY SIDE -->
+<div class="image-row">
+
 <div class="medical-image">
-<img src="../images/moa1.jpg" alt="Medical Certification">
+<img src="../images/moa1.jpg" alt="MOA 1">
 </div>
 
 <div class="medical-image">
-<img src="../images/moa2.jpg" alt="Medical Certification">
+<img src="../images/moa2.jpg" alt="MOA 2">
 </div>
 
+</div>
+
+<!-- BOTTOM CENTER IMAGE -->
+<div class="bottom-image">
+
 <div class="medical-image">
-<img src="../images/moa3.jpg" alt="Medical Certification">
+<img src="../images/moa3.jpg" alt="MOA 3">
+</div>
+
 </div>
 
 <a href="../index.html" class="primary-btn back-btn">
