@@ -22,7 +22,7 @@ padding:40px 20px;
 
 .page-container{
 width:100%;
-max-width:900px;
+max-width:1200px;
 }
 
 .page-card{
@@ -33,15 +33,36 @@ border-radius:35px;
 .page-title{
 font-size:52px;
 font-weight:800;
-margin-bottom:20px;
+margin-bottom:35px;
 line-height:1.1;
 }
 
-.page-text{
-font-size:18px;
-line-height:1.9;
-color:var(--text-secondary);
+/* IMAGE GRID */
+.image-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
 margin-bottom:35px;
+}
+
+.dtr-image{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.dtr-image img{
+width:85%;
+max-width:380px;
+height:auto;
+object-fit:contain;
+border-radius:25px;
+border:2px solid rgba(255,255,255,0.08);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+background:rgba(255,255,255,0.03);
+padding:15px;
+display:block;
 }
 
 .back-btn{
@@ -62,13 +83,20 @@ border-radius:28px;
 
 .page-title{
 font-size:34px;
-margin-bottom:15px;
+margin-bottom:25px;
 }
 
-.page-text{
-font-size:15px;
-line-height:1.8;
-margin-bottom:25px;
+/* STACK IMAGES ON MOBILE */
+.image-grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.dtr-image img{
+width:100%;
+max-width:100%;
+padding:10px;
+border-radius:20px;
 }
 
 .back-btn{
@@ -94,9 +122,17 @@ font-size:15px;
 Daily Time Record
 </h1>
 
-<p class="page-text">
-Add your content/documents here later.
-</p>
+<div class="image-grid">
+
+<div class="dtr-image">
+<img src="../images/dtr1.jpg" alt="DTR 1">
+</div>
+
+<div class="dtr-image">
+<img src="../images/dtr2.jpg" alt="DTR 2">
+</div>
+
+</div>
 
 <a href="../index.html" class="primary-btn back-btn">
 Back Home
