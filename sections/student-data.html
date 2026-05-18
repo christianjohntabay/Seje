@@ -22,7 +22,7 @@ padding:40px 20px;
 
 .page-container{
 width:100%;
-max-width:900px;
+max-width:1100px;
 }
 
 .page-card{
@@ -33,19 +33,110 @@ border-radius:35px;
 .page-title{
 font-size:52px;
 font-weight:800;
-margin-bottom:20px;
+margin-bottom:45px;
 line-height:1.1;
+text-transform:uppercase;
 }
 
-.page-text{
-font-size:18px;
-line-height:1.9;
+.student-header{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+gap:40px;
+margin-bottom:50px;
+flex-wrap:wrap;
+}
+
+.student-info{
+flex:1;
+min-width:300px;
+}
+
+.student-photo{
+width:220px;
+height:220px;
+border-radius:25px;
+overflow:hidden;
+border:4px solid rgba(255,255,255,0.15);
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+flex-shrink:0;
+}
+
+.student-photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.section-title{
+font-size:28px;
+font-weight:700;
+margin-bottom:25px;
+padding-bottom:12px;
+border-bottom:2px solid rgba(255,255,255,0.1);
+}
+
+.info-table{
+width:100%;
+border-collapse:collapse;
+}
+
+.info-table tr{
+border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.info-table td{
+padding:14px 0;
+font-size:17px;
+line-height:1.7;
+vertical-align:top;
+}
+
+.info-label{
+font-weight:700;
+width:230px;
+color:white;
+}
+
+.info-value{
 color:var(--text-secondary);
-margin-bottom:35px;
+}
+
+.education-section{
+margin-top:50px;
+}
+
+.education-table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.education-table th{
+text-align:left;
+padding:18px 15px;
+font-size:16px;
+font-weight:700;
+background:rgba(255,255,255,0.05);
+color:white;
+}
+
+.education-table td{
+padding:18px 15px;
+font-size:16px;
+line-height:1.7;
+color:var(--text-secondary);
+border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.education-table tr:hover{
+background:rgba(255,255,255,0.03);
+transition:0.3s;
 }
 
 .back-btn{
 display:inline-block;
+margin-top:40px;
 }
 
 @media(max-width:900px){
@@ -56,19 +147,49 @@ align-items:flex-start;
 }
 
 .page-card{
-padding:30px 25px;
+padding:30px 22px;
 border-radius:28px;
 }
 
 .page-title{
 font-size:34px;
-margin-bottom:15px;
+margin-bottom:30px;
 }
 
-.page-text{
-font-size:15px;
-line-height:1.8;
-margin-bottom:25px;
+.student-header{
+flex-direction:column-reverse;
+align-items:center;
+text-align:left;
+}
+
+.student-photo{
+width:180px;
+height:180px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.info-table td{
+font-size:14px;
+padding:12px 0;
+}
+
+.info-label{
+width:140px;
+}
+
+.education-table{
+display:block;
+overflow-x:auto;
+white-space:nowrap;
+}
+
+.education-table th,
+.education-table td{
+font-size:14px;
+padding:14px 10px;
 }
 
 .back-btn{
@@ -91,12 +212,148 @@ font-size:15px;
 <div class="glass page-card">
 
 <h1 class="page-title">
-Student Data
+STUDENT DATA
 </h1>
 
-<p class="page-text">
-Add your content/documents here later.
-</p>
+<div class="student-header">
+
+<div class="student-info">
+
+<h2 class="section-title">
+PERSONAL DATA
+</h2>
+
+<table class="info-table">
+
+<tr>
+<td class="info-label">Name</td>
+<td class="info-value">: Christian John B. Tabay</td>
+</tr>
+
+<tr>
+<td class="info-label">Gender</td>
+<td class="info-value">: Male</td>
+</tr>
+
+<tr>
+<td class="info-label">Date of Birth</td>
+<td class="info-value">: March 15, 2004</td>
+</tr>
+
+<tr>
+<td class="info-label">Place of Birth</td>
+<td class="info-value">: Pagadian City, Zamboanga Del Sur</td>
+</tr>
+
+<tr>
+<td class="info-label">Civil Status</td>
+<td class="info-value">: Single</td>
+</tr>
+
+<tr>
+<td class="info-label">Citizenship</td>
+<td class="info-value">: Filipino</td>
+</tr>
+
+<tr>
+<td class="info-label">Religion</td>
+<td class="info-value">: Roman Catholic</td>
+</tr>
+
+<tr>
+<td class="info-label">Address</td>
+<td class="info-value">: Tigbao, Zamboanga Del Sur</td>
+</tr>
+
+<tr>
+<td class="info-label">Father's Name</td>
+<td class="info-value">: Alfredo Cristobal</td>
+</tr>
+
+<tr>
+<td class="info-label">Occupation</td>
+<td class="info-value">: N/A</td>
+</tr>
+
+<tr>
+<td class="info-label">Present Address</td>
+<td class="info-value">: Tigbao, Zamboanga Del Sur</td>
+</tr>
+
+<tr>
+<td class="info-label">Mother's Name</td>
+<td class="info-value">: Christy B. Tabay</td>
+</tr>
+
+<tr>
+<td class="info-label">Occupation</td>
+<td class="info-value">: House Wife</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="student-photo">
+<img src="../images/profile.jpg" alt="Student Photo">
+</div>
+
+</div>
+
+<div class="education-section">
+
+<h2 class="section-title">
+EDUCATIONAL BACKGROUND
+</h2>
+
+<table class="education-table">
+
+<thead>
+
+<tr>
+<th>Education</th>
+<th>School</th>
+<th>Year Graduated</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Primary</td>
+<td>Tigbao Elementary School</td>
+<td>2015-2016</td>
+</tr>
+
+<tr>
+<td>Junior High School</td>
+<td>Tigbao National High School</td>
+<td>2019-2020</td>
+</tr>
+
+<tr>
+<td>Senior High School</td>
+<td>Tigbao National High School</td>
+<td>2021-2022</td>
+</tr>
+
+<tr>
+<td>Tertiary</td>
+<td>JHCSC Main Campus</td>
+<td>2025-2026</td>
+</tr>
+
+<tr>
+<td>Degree</td>
+<td colspan="2">Bachelor of Science in Information Technology (BSIT)</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
 
 <a href="../index.html" class="primary-btn back-btn">
 Back Home
