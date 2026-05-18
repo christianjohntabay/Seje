@@ -22,7 +22,7 @@ padding:40px 20px;
 
 .page-container{
 width:100%;
-max-width:1100px;
+max-width:1200px;
 }
 
 .page-card{
@@ -38,19 +38,28 @@ line-height:1.1;
 text-transform:uppercase;
 }
 
+/* IMAGE GRID */
+.form-gallery{
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:25px;
+margin-bottom:35px;
+}
+
 .form-image{
 width:100%;
+height:320px; /* shorter height */
 border-radius:25px;
 overflow:hidden;
 border:2px solid rgba(255,255,255,0.08);
 box-shadow:0 15px 35px rgba(0,0,0,0.25);
-margin-bottom:35px;
 }
 
 .form-image img{
 width:100%;
-display:block;
+height:100%;
 object-fit:cover;
+display:block;
 }
 
 .back-btn{
@@ -72,6 +81,16 @@ border-radius:28px;
 .page-title{
 font-size:34px;
 margin-bottom:25px;
+}
+
+/* Stack images on mobile */
+.form-gallery{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.form-image{
+height:230px;
 }
 
 .back-btn{
@@ -97,12 +116,16 @@ font-size:15px;
 APPLICATION FORM
 </h1>
 
+<div class="form-gallery">
+
 <div class="form-image">
 <img src="../images/Picture1.png" alt="Application Form">
 </div>
 
 <div class="form-image">
 <img src="../images/picture2.png" alt="Application Form">
+</div>
+
 </div>
 
 <a href="../index.html" class="primary-btn back-btn">
