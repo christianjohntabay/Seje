@@ -22,30 +22,71 @@ padding:40px 20px;
 
 .page-container{
 width:100%;
-max-width:900px;
+max-width:1000px;
 }
 
 .page-card{
-padding:60px;
+padding:70px;
 border-radius:35px;
 }
 
 .page-title{
 font-size:52px;
 font-weight:800;
-margin-bottom:20px;
+margin-bottom:40px;
 line-height:1.1;
+text-transform:uppercase;
 }
 
-.page-text{
+.letter-content{
 font-size:18px;
-line-height:1.9;
+line-height:2;
 color:var(--text-secondary);
-margin-bottom:35px;
+}
+
+.letter-date{
+margin-bottom:45px;
+font-weight:500;
+}
+
+.letter-recipient{
+margin-bottom:40px;
+line-height:1.8;
+}
+
+.letter-greeting{
+margin-bottom:25px;
+font-weight:600;
+}
+
+.letter-body p{
+margin-bottom:28px;
+text-align:justify;
+text-indent:50px;
+}
+
+.signature-section{
+margin-top:50px;
+line-height:2;
+}
+
+.signature-title{
+margin-bottom:25px;
+font-weight:600;
+}
+
+.signature-names{
+margin-bottom:45px;
+}
+
+.noted-by{
+margin-top:20px;
+line-height:2;
 }
 
 .back-btn{
 display:inline-block;
+margin-top:40px;
 }
 
 @media(max-width:900px){
@@ -56,19 +97,23 @@ align-items:flex-start;
 }
 
 .page-card{
-padding:30px 25px;
+padding:35px 25px;
 border-radius:28px;
 }
 
 .page-title{
 font-size:34px;
-margin-bottom:15px;
+margin-bottom:25px;
 }
 
-.page-text{
+.letter-content{
 font-size:15px;
-line-height:1.8;
-margin-bottom:25px;
+line-height:1.9;
+}
+
+.letter-body p{
+text-indent:25px;
+margin-bottom:22px;
 }
 
 .back-btn{
@@ -91,12 +136,80 @@ font-size:15px;
 <div class="glass page-card">
 
 <h1 class="page-title">
-Application Letter
+APPLICATION LETTER
 </h1>
 
-<p class="page-text">
-Add your content/documents here later.
+<div class="letter-content">
+
+<div class="letter-date">
+February 09, 2025
+</div>
+
+<div class="letter-recipient">
+
+<strong>MA. JUDELYN J. RAMOS, Ed.D., CESO VI</strong><br>
+School Division Superintendent<br>
+Dao, Pagadian City<br>
+Zamboanga del Sur
+
+</div>
+
+<div class="letter-greeting">
+Dear Ma’am Judelyn,
+</div>
+
+<div class="letter-body">
+
+<p>
+Greetings of Peace!
 </p>
+
+<p>
+We respectfully submit this letter to formally apply for On-the-Job Training at the Department of Education (DepEd). We are fourth-year Bachelor of Science in Information Technology students of J.H. Cerilles State College, and the completion of an On-the-Job Training program is a requirement of our academic curriculum.
+</p>
+
+<p>
+Through this training, we aim to gain practical experience, apply our theoretical knowledge, and develop professional competencies relevant to our field of study. We believe that your esteemed office provides an ideal environment for learning, particularly in the areas of information and communications technology, innovation, and public service. The DepEd’s commitment to technological advancement and community development strongly aligns with our academic and career goals.
+</p>
+
+<p>
+We are confident that this opportunity will significantly contribute to our academic preparation and professional development. We assure you of our willingness to learn, comply with your office policies, and perform assigned tasks with diligence and professionalism.
+</p>
+
+<p>
+Thank you very much for considering our application. We look forward to the opportunity to undergo training under your guidance and contribute meaningfully to your office.
+</p>
+
+</div>
+
+<div class="signature-section">
+
+<div class="signature-title">
+Sincerely,
+</div>
+
+<div class="signature-names">
+
+BORNEA, QUEENNELYN A.<br>
+MORANTE, JEPOY O.<br>
+RONDRIQUE, KENT PETER M.<br>
+SAURA, VARICK B.<br>
+TABAY, CHRISTIAN JOHN C.
+
+</div>
+
+<div class="noted-by">
+
+<strong>Noted by:</strong><br><br>
+
+MARIBEL M. ESTIOCO, MST-CS<br>
+BSIT-Program Chair
+
+</div>
+
+</div>
+
+</div>
 
 <a href="../index.html" class="primary-btn back-btn">
 Back Home
